@@ -1,0 +1,61 @@
+.CodeMirror-lines pre {
+	line-height: 2.5em;
+	height: 2.5em;
+}
+
+.cm-implicit-break {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.cm-heading-1 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.cm-heading-2 {
+	font-size: 2.0em;
+	font-weight: bold;
+}
+
+.cm-heading-3 {
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.cm-heading-4 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.cm-heading-5 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.cm-heading-6 {
+	font-weight: bold;
+}
+
+.cm-text-emphasis {
+	font-style: oblique;
+}
+
+.cm-text-strong {
+	font-weight: bold;
+}
+
+.cm-list-unordered {
+	color: blue;
+	padding-left: 1em;
+}
+
+.cm-list-ordered {
+	color: red;
+	padding-left: 1em;
+}
+
+.cm-auto-link {
+	color: blue;
+	text-decoration: underline;
+}
+

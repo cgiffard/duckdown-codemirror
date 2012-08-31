@@ -5,18 +5,21 @@ CodeMirror.defineMode("duckdown", function(cmCfg, modeCfg) {
 		},
 		
 		token: function(stream, state) {
-			//state.clear();
-			//state.tokenise(stream.string);
-			//state.parse();
-			//console.log(state.tokens);
-			//console.log(state.compile());
-			console.log("string:",stream.string);
+			// This will get better.
+			// I've got some changes in mind for Duckdown, so it can more
+			// easily parse without a couple of the hacks here.
 			
 			state.clear();
-			console.log(state.parseToken("Stuff:",state));
+			var tokens = state.tokenise(stream.string);
+			state.clear();
+			
+			var result = tokens.reduce(function(prev,cur) {
+				var val = (prev && prev.length ? " " : "");
+				return val + state.parseToken(state,cur);
+			}," ");
 			
 			stream.next();
-			return ["header","comment","quote","string","hr","link"][Math.floor(Math.random()*6)];
+			return result;
 		}
 	};
 
