@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf8" />
+		<title>Duckdown-codemirror test</title>
+		
+		<link rel="stylesheet" href="codemirror/lib/codemirror.css" />
+		<link rel="stylesheet" href="theme.css" />
+	</head>
+	<body>
+		<h1>Duckdown-codemirror test</title>
+		<script src="duckdown/compiled/duckdown-unminified.js"></script>
+		<script src="codemirror/lib/codemirror.js"></script>
+		<script src="mode.js"></script>
+		<script>
+			
+			window.addEventListener("load",function() {
+				var codeMirror = new CodeMirror(document.body, {
+					"value": localStorage["editRegion"] || "",
+					"mode": "duckdown"
+				});
+			});
+			
+		</script>
+	</body>
+</html>

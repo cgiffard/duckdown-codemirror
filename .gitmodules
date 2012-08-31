@@ -1,0 +1,6 @@
+[submodule "codemirror"]
+	path = codemirror
+	url = https://github.com/marijnh/CodeMirror.git
+[submodule "duckdown"]
+	path = duckdown
+	url = https://github.com/cgiffard/Duckdown.git
